@@ -26,6 +26,7 @@ const ProductDetail = async ({ params }: Props) => {
     if (parseInt(product) > 100) {
         notFound();
     }
+    
     return (
         <div>
             <h3>Product: {product}</h3>
