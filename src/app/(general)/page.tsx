@@ -13,7 +13,10 @@ export default function Home() {
     { href: "/login", title: "Login", id: 7 },
     { href: "/register", title: "Register", id: 8 },
     { href: "/forgot-password", title: "Reset Password", id: 9 },
-    { href: "/articles", title: "Articles", id: 10 }
+    { href: "/articles", title: "Articles", id: 10 },
+    { href: "/newproducts", title: "New Products", id: 11 },
+    { href: "/server-cmp", title: "Server Components", id: 12 },
+    { href: "/fetchfromserver", title: "Fetch Data", id: 13 }
   ]
 
   return (

@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
     //return NextResponse.redirect(new URL('/', request.url));
 
     if (request.nextUrl.pathname === '/profiles') {
-        return NextResponse.redirect(new URL('/', request.nextUrl))
+        return NextResponse.redirect(new URL('/', request.nextUrl));
     }
 
     const newResponse = NextResponse.next();

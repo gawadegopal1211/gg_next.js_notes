@@ -1,5 +1,6 @@
 import ErrorWrapper from '../error-wrapper';
 import '../style.css';
+import ThemeProvider from '../theme-provider';
 export const metadata = {
   title: {
     default: 'Next.js',
@@ -15,19 +16,21 @@ export default function GeneralLayout({
 }) {
   return (
     <html lang="en">
-      <body data-new-gr-c-s-check-loaded="14.1223.0" data-gr-ext-installed="">
-        <header style={{ backgroundColor: 'lightgreen', padding: '12px' }}>
-          <h1>Header</h1>
-        </header>
+      <ThemeProvider>
+        <body data-new-gr-c-s-check-loaded="14.1223.0" data-gr-ext-installed="">
+          <header style={{ backgroundColor: 'lightgreen', padding: '12px' }}>
+            <h1>Header</h1>
+          </header>
 
-        <ErrorWrapper>
-          {children}
-        </ErrorWrapper>
-        
-        <footer style={{ backgroundColor: 'aliceblue', padding: '12px' }}>
-          <h1>Footer</h1>
-        </footer>
-      </body>
+          <ErrorWrapper>
+            {children}
+          </ErrorWrapper>
+
+          <footer style={{ backgroundColor: 'aliceblue', padding: '12px' }}>
+            <h1>Footer</h1>
+          </footer>
+        </body>
+      </ThemeProvider>
     </html>
   )
 }

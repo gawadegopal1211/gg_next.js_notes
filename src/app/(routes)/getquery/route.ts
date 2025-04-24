@@ -10,4 +10,3 @@ export async function GET(request: NextRequest) {
     return Response.json(fil_ele);
 }
 //http://localhost:3000/getquery?query=Abc
-
